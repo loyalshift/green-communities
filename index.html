@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de LoyalShift para Green Communities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FBFBFB;
+            color: #1a2e24; /* Dark Greenish Black */
+        }
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+        }
+        .text-brand-green { color: #228B22; } /* ForestGreen */
+        .bg-brand-green { background-color: #228B22; }
+        .hover-bg-brand-green-dark:hover { background-color: #1a6a1a; }
+        .border-brand-green { border-color: #228B22; }
+        .bg-light-green { background-color: #f0fff0; } /* Honeydew */
+        .shadow-brand { box-shadow: 0 10px 25px -5px rgba(34, 139, 34, 0.1), 0 8px 10px -6px rgba(34, 139, 34, 0.1); }
+        .tab-active {
+            border-bottom: 3px solid #228B22;
+            color: #1a2e24;
+            font-weight: 600;
+        }
+        .tab-inactive {
+            border-bottom: 3px solid transparent;
+            color: #6b7280;
+        }
+        .fade-in {
+            animation: fadeInAnimation 0.5s ease-in-out forwards;
+        }
+        @keyframes fadeInAnimation {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-brand-green">LoyalShift</h1>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#solucion" class="text-gray-600 hover:text-brand-green transition duration-300">Nuestra Solución</a>
+                <a href="#servicio" class="text-gray-600 hover:text-brand-green transition duration-300">Servicios</a>
+                <a href="#inversion" class="text-gray-600 hover:text-brand-green transition duration-300">Inversión</a>
+            </nav>
+            <a href="#contacto" class="bg-brand-green text-white font-semibold px-5 py-2.5 rounded-lg shadow-sm hover-bg-brand-green-dark transition duration-300 transform hover:scale-105">
+                ¡Empecemos!
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[85vh] flex items-center">
+        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://placehold.co/1920x1080/F0FFF0/1A2E24?text=Green+Communities');"></div>
+        <div class="container mx-auto px-6 text-center z-10 py-20">
+            <div class="max-w-4xl mx-auto">
+                <span class="text-brand-green font-semibold tracking-wider uppercase">LoyalShift para Green Communities</span>
+                <h2 class="text-4xl md:text-6xl font-bold text-gray-800 mt-4 mb-6 leading-tight">Tecnología que Cultiva su Misión</h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+                    Una alianza para el crecimiento sostenible. Hemos diseñado una solución para asegurar que su sitio web sea tan confiable y resiliente como los ecosistemas que protegen.
+                </p>
+                <a href="#solucion" class="bg-brand-green text-white font-bold py-4 px-10 rounded-full text-lg shadow-brand transform hover:scale-105 transition-all duration-300 ease-out inline-block">
+                    Descubrir la Solución
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solucion" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestra Solución: Desarrollo Personalizado</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    En LoyalShift, admiramos profundamente la labor de Green Communities. Por eso, hemos diseñado una solución integral.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <!-- Feature 1 -->
+                <div class="bg-light-green p-8 rounded-2xl border border-green-200 transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="inline-block bg-white p-4 rounded-full mb-6 shadow-md">
+                        <svg class="w-10 h-10 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Eliminación de Problemas</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Resolvemos los problemas del portal de pagos (rechazos de tarjeta, demasiados clics) con una solución a la medida que agiliza la experiencia del usuario.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-light-green p-8 rounded-2xl border border-green-200 transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="inline-block bg-white p-4 rounded-full mb-6 shadow-md">
+                        <svg class="w-10 h-10 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Control Total y Eficiencia</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Construimos su sitio web desde cero con código moderno (JavaScript, React), lo que le da propiedad total, elimina plugins y garantiza un rendimiento superior.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-light-green p-8 rounded-2xl border border-green-200 transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="inline-block bg-white p-4 rounded-full mb-6 shadow-md">
+                        <svg class="w-10 h-10 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">SEO y Visibilidad</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Optimizamos la estructura y el contenido para los motores de búsqueda, asegurando que su página aparezca en los primeros resultados de Google de manera orgánica.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with Tabs -->
+    <section id="servicio" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Qué Incluye Nuestro Servicio</h2>
+            </div>
+            <!-- Tabs Navigation -->
+            <div class="flex justify-center border-b border-gray-200 mb-10">
+                <button class="tab-button tab-active px-8 py-4 text-lg transition-colors duration-300" onclick="changeTab('desarrollo')">Desarrollo Web</button>
+                <button class="tab-button tab-inactive px-8 py-4 text-lg transition-colors duration-300" onclick="changeTab('soporte')">Mantenimiento y Soporte</button>
+                <button class="tab-button tab-inactive px-8 py-4 text-lg transition-colors duration-300" onclick="changeTab('proceso')">Proceso y Entrega</button>
+            </div>
+            <!-- Tabs Content -->
+            <div id="tab-content" class="max-w-4xl mx-auto">
+                <!-- Desarrollo Web Content -->
+                <div id="desarrollo" class="tab-pane fade-in">
+                    <div class="grid md:grid-cols-2 gap-10 items-center">
+                        <img src="https://placehold.co/600x400/228B22/FFFFFF?text=Desarrollo+Moderno" alt="Desarrollo Web" class="rounded-lg shadow-lg w-full">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Desarrollo Web y E-commerce</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Crearemos un sitio web nuevo, línea por línea de código, manteniendo el estilo actual. Nos enfocaremos en una reestructuración completa del e-commerce para optimizar los pagos grupales, la tienda de café y los envíos, eliminando la confusión y los problemas de transacción.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mantenimiento y Soporte Content -->
+                <div id="soporte" class="tab-pane hidden fade-in">
+                     <div class="grid md:grid-cols-2 gap-10 items-center">
+                        <img src="https://placehold.co/600x400/228B22/FFFFFF?text=Soporte+Confiable" alt="Soporte Técnico" class="rounded-lg shadow-lg w-full">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Soporte Continuo</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Ofrecemos un plan de soporte post-lanzamiento para garantizar que su plataforma se mantenga segura, actualizada y funcionando a su máximo rendimiento, permitiéndole enfocarse en su misión sin preocupaciones técnicas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proceso y Entrega Content -->
+                <div id="proceso" class="tab-pane hidden fade-in">
+                     <div class="grid md:grid-cols-2 gap-10 items-center">
+                        <img src="https://placehold.co/600x400/228B22/FFFFFF?text=Entrega+Eficiente" alt="Proceso de Desarrollo" class="rounded-lg shadow-lg w-full">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Proceso Transparente</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Nuestro proceso es colaborativo y ágil. Desde el diseño inicial hasta el despliegue final, mantendremos una comunicación constante, asegurando que el producto final exceda sus expectativas y se entregue a tiempo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="bg-brand-green text-white rounded-2xl p-10 md:p-16 flex flex-col md:flex-row items-center justify-between shadow-brand">
+                <div class="md:w-2/3 mb-8 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Impacto en su Misión</h2>
+                    <p class="text-lg opacity-90 leading-relaxed">
+                        Una plataforma digital eficiente y confiable le permite concentrarse en lo que mejor sabe hacer: restaurar ecosistemas y conectar culturas. Menos tiempo gestionando problemas técnicos significa más tiempo generando un impacto real.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white/20 p-6 rounded-full inline-block">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <p class="mt-4 font-semibold text-xl">Eficiencia y Experiencia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section id="inversion" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestra Inversión</h2>
+                <p class="text-lg text-gray-600 mb-10">
+                    Esta es una cotización personalizada para el desarrollo completo de la nueva página web. El precio cubre todos los servicios de desarrollo, optimización de e-commerce y lanzamiento.
+                </p>
+                <div class="bg-white border-2 border-brand-green rounded-2xl p-10 shadow-lg inline-block">
+                    <span class="text-gray-500 font-medium">Precio Unitario</span>
+                    <p class="text-5xl md:text-6xl font-extrabold text-brand-green my-4">$1,500</p>
+                    <p class="text-gray-600">Solución integral y de alto rendimiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contacto" class="bg-light-green py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">¡Empecemos!</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+                Permítanos ser su socio tecnológico para que Green Communities pueda seguir creciendo y cultivando un futuro más verde para todos.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 LoyalShift. Todos los derechos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Una alianza tecnológica para un mundo más sostenible.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for tab functionality
+        function changeTab(tabId) {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            tabButtons.forEach(button => {
+                button.classList.remove('tab-active');
+                button.classList.add('tab-inactive');
+            });
+
+            tabPanes.forEach(pane => {
+                pane.classList.add('hidden');
+            });
+
+            const selectedButton = document.querySelector(`button[onclick="changeTab('${tabId}')"]`);
+            selectedButton.classList.add('tab-active');
+            selectedButton.classList.remove('tab-inactive');
+
+            const selectedPane = document.getElementById(tabId);
+            selectedPane.classList.remove('hidden');
+        }
+    </script>
+
+</body>
+</html>
